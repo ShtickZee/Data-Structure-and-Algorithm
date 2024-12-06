@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float result = 0.0f;  // Starts the value to 0
+    float num = 0.0f;     // Sets the value of this num to 0 as well
+    char op = '+';        // The default operator'
+    char cont = 'y';      // COntrols the loop
+
+    // Input the first number for the operator 
+    cout << "Enter the first number: ";
+    cin >> result;
+
+    while (cont == 'y') {  // Will Keep looping Enter an Operator and next number until user puts n
+        cout << "Enter an operator (+, -, *, /): ";
+        cin >> op;
+
+        if (op == '+' || op == '-' || op == '*' || op == '/') {
+            cout << "Enter the next number: ";
+            cin >> num;
+
+            if (op == '+') {
+                result = result + num;
+            } else if (op == '-') {
+                result = result - num;
+            } else if (op == '*') {
+                result = result * num;
+            } else if (op == '/') {
+                if (num == 0.0f) {
+                    cout << "Error: Cannot divide by zero!" << endl;
+                    cout << "Please enter a non-zero number: ";
+                    cin >> num;
+                    result = result / num;
+                } else {
+                    result = result / num;
+                }
+            }
+
+            cout << "Current result: " << result << endl;
+        } else {
+            cout << "Invalid operator! Please enter a valid operator." << endl;
+        }
+
+        cout << "Do you want to continue? (y/n): ";
+        cin >> cont;
+    }
+
+    cout << "Final result: " << result << endl;
+    return 0;
+}

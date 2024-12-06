@@ -1,0 +1,21 @@
+1. Initiliaze Coffee Making Process
+2. Grab necessary ingredients
+3. Grab Coffee Mug
+4. Grab Coffee Powder
+5. Grab Creamer
+6. Grab Sugar
+7. Grab Hot Water
+8. Set Coffee Powder = 2 teaspons
+9. Set Creamer = 1/2 teaspoons
+10. Set Sugar 2 teaspoons
+11. Set Hot Water = 120 mililliters
+12. Set Coffee Mug = Empty
+13. Check if cup is placed
+14. If coffee mug is placed continue, elif grab a coffee mug
+15. Initialize Add Ingredients to Mug
+16. Coffee Powder + Creamer + Sugar = Coffee Mug
+17. If Coffee powder, creamer , sugar is =<0, reinitialize Grab necessary ingredients
+18. Initiliaze Pour Hot water
+19. Hot Water + Coffee mug = Mug of Coffee
+
+20. Enjoy your Mug of Coffee!
